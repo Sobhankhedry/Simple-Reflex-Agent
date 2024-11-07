@@ -48,7 +48,7 @@ Left Room is already clean and going to Right
 Sucked the dirt in the Right room and we will go to Left room
 Left Room is already clean and going to Right
 Right Room is already clean and going to Right
-all rooms are clean
+all rooms are clean with 100 score!!
 ```
 
 ## Contributing
