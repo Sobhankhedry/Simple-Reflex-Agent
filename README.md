@@ -1,4 +1,4 @@
-# Agent Vacuum Cleaner Simulation
+# Agent Vacum Cleaner Simulation
 
 This project simulates a simple vacuum cleaner agent that navigates between two rooms and cleans them if they are dirty. The agent starts in one of the rooms, checks the room's cleanliness status, and takes appropriate actions (cleaning or moving to the next room) until both rooms are clean.
 
@@ -11,7 +11,7 @@ This project simulates a simple vacuum cleaner agent that navigates between two 
 - [License](#license)
 
 ## Overview
-The `Agent` class models a basic vacuum cleaner with the following functionalities:
+The `Agent` class models a basic vacum cleaner with the following functionalities:
 - Detects whether rooms are clean or dirty.
 - Cleans rooms as necessary.
 - Moves between two rooms until both are clean.
@@ -25,7 +25,7 @@ The `Agent` class models a basic vacuum cleaner with the following functionaliti
 ## Usage
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/agent-vacuum-cleaner.git
+   git clone https://github.com/your-username/agent-vacum-cleaner.git
    cd agent-vacuum-cleaner
    ```
 2. Compile and run the project:
