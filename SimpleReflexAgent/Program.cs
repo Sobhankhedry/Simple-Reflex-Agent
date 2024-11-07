@@ -4,6 +4,7 @@
     public static bool RightRoom = false;
     public static string[] Rooms = { "Dirty", "Dirty" };
     public static int number = 1;
+    public static int MAX_SCORE = 0;
     public static void Main(String[] args)
     {
         CleanRoom("Left", "Suck", LeftRoom, RightRoom);
@@ -13,7 +14,9 @@
     {
         if (leftRoom == true && rightRoom == true)
         {
-            Console.WriteLine($"({number}) all rooms are clean");
+            int score = MAX_SCORE * 100 / 2;
+
+            Console.WriteLine($"({number}) all rooms are clean with the {score} score!!");
             return "nothing";
         }
         if (action == "Suck")
@@ -23,6 +26,7 @@
                 LeftRoom = true;
                 Console.WriteLine($"({number}) Sucked the dirt in the Left room and we will go to right room");
                 number++;
+                MAX_SCORE++;
                 CleanRoom("Right", "Go Right", LeftRoom, RightRoom);
             }
             else if (currentLocation == "Left" && leftRoom == true)
@@ -36,6 +40,7 @@
                 RightRoom = true;
                 Console.WriteLine($"({number}) Sucked the dirt in the Right room and we will go to Left room");
                 number++;
+                MAX_SCORE++;
                 CleanRoom("Left", "Go Left", LeftRoom, RightRoom);
             }
             else if (currentLocation == "Right" && rightRoom == true)
